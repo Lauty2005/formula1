@@ -1,0 +1,448 @@
+
+
+/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Header */
+
+header nav {
+  background-color: rgba(0, 0, 0, 0.719);
+  width: 100%;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin: 15px;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Main */
+
+main section div img {
+  width: 15%;
+  height: 15%;
+}
+
+/* Coomunes entre las paginas */
+
+.fondo-logo{
+  background-color: black;
+  height: 100vh;
+}
+
+/* Ferrari */
+
+.ferrari {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.ferrari img {
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
+}
+
+.section1 h3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(204, 0, 0);
+  font-size: 50px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/fondo.jpg");
+  background-size: contain;
+}
+
+/*Pagina Ferrari*/
+
+.ferrari-main{
+  background-color: rgba(0, 0, 0, 0.863);
+  color: lightgray;
+}
+
+/*SF23*/
+
+.ferrari-main section h2{
+  text-align: center;
+}
+
+.ferrari-main section div #sf23{
+  width: auto;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.izquierda{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Equipo*/
+
+#leclerc{
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+  margin-left: 3rem;
+}
+
+.corredor-1{
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-ferrari{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.informacion{
+  display: flex;
+}
+
+.informacion div{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.informacion div p{
+  margin: 0;
+}
+
+.estadisticas{
+  display: flex;
+}
+
+/*Pistas*/
+
+.primera{
+  width: 50%;
+  height: auto;
+}
+
+.segunda{
+  width: 50%;
+  height: auto;
+}
+
+
+/*Tarjetas*/
+
+.wrap{
+width: auto;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+
+.tarjeta-wrap{
+margin: 10px;
+-webkit-perspective: 800;
+perspective: 800;
+}
+
+.tarjeta{
+width: 15rem;
+height: 15rem;
+background: #797979;
+position: relative;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transition: .7s ease;
+transition: .7s ease;
+-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+
+}
+
+.adelante, .atras{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.adelante{
+width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atras{
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+
+padding: 15px;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+  flex-direction: column;
+text-align: center;
+color: #fff;
+font-family: "open sans";
+background: #F29720;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+
+.card1{
+background-image: url(http://1.1m.yt/J9Kw7kl.jpg);
+background-size: cover;
+}
+
+.card2{
+background-image: url(http://1.1m.yt/dlxMf3R.jpg);
+background-size: cover;
+}
+
+/* Mercedes */
+
+.mercedes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.mercedes img {
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
+}
+
+.section2 h3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/fondo.jpg");
+  background-size: contain;
+}
+
+/* Red Bull */
+
+.redbull {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.redbull img {
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
+}
+
+.section3 h3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/fondo.jpg");
+  background-size: contain;
+}
+
+/* Aston Martin */
+
+.astonmartin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.astonmartin img {
+  border-radius: 10px;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
+}
+
+.section4 h3 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/fondo.jpg");
+  background-size: contain;
+}
+
+/* Tabla */
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid black;
+  width: 50%;
+  text-align: center;
+  color: black;
+}
+
+/* Titulos */
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+/* Footer */
+
+footer {
+  background-image: url("../../img/footer.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+footer img{
+  width: 320px;
+  height: 140px;
+}
+
+footer div h4 {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+
+.contacto label input {
+  background-color: transparent;
+  width: 400px;
+  height: 40px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.contacto label textarea {
+  background-color: transparent;
+  width: 400px;
+  height: 40px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.contacto label {
+  color: rgb(190, 190, 190);
+  text-decoration: underline;
+}
+
+::placeholder {
+  color: rgb(190, 190, 190);
+}
+
+.contacto input {
+  height: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 3px;
+  width: 100px;
+  cursor: pointer;
+  color: rgb(190, 190, 190);
+}
+
+footer div p {
+  color: white;
+  padding-top: 350px;
+}

@@ -7,6 +7,13 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+hr {
+  height: 0.5rem;
+  background-color: lightgrey;
+  border-color: lightgrey;
+}
+
+
 /* Header */
 
 header nav {
@@ -17,6 +24,7 @@ header nav {
 
 header nav ul {
   display: flex;
+  margin: 0;
 }
 
 header nav ul li {
@@ -37,11 +45,9 @@ main section div img {
   height: 15%;
 }
 
-/* Coomunes entre las paginas */
-
-.fondo-logo {
-  background-color: black;
-  height: 100vh;
+.introduccion {
+  background-color: rgb(255, 249, 241);
+  padding: 0.5rem 1rem;
 }
 
 /* Ferrari */
@@ -62,7 +68,7 @@ main section div img {
 .section1 h3 a {
   text-decoration: none;
   font-weight: bold;
-  color: rgb(204, 0, 0);
+  color: red;
   font-size: 50px;
 }
 
@@ -70,7 +76,7 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../img/fondo.jpg");
+  background-image: url("../img/fondo.jpg");
   background-size: contain;
 }
 
@@ -87,8 +93,8 @@ main section div img {
   text-align: center;
 }
 
-.ferrari-main section div #sf23 {
-  width: auto;
+.ferrari-main section div #monoplaza {
+  width: 50%;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
 }
@@ -107,7 +113,8 @@ main section div img {
 
 /*Equipo*/
 
-#leclerc {
+#piloto1 {
+  width: 35%;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
   margin-left: 3rem;
@@ -119,11 +126,24 @@ main section div img {
   justify-content: space-around;
 }
 
+#piloto2 {
+  width: 35%;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+  margin-left: 3rem;
+}
+
+.corredor-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .contenedor-ferrari {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .informacion {
@@ -145,6 +165,8 @@ main section div img {
 .estadisticas {
   display: flex;
 }
+
+
 
 /*Pistas*/
 
@@ -227,7 +249,7 @@ main section div img {
   text-align: center;
   color: #fff;
   font-family: "open sans";
-  background: #F29720;
+  background: #ff0000;
 }
 
 .tarjeta-wrap:hover .tarjeta {
@@ -271,7 +293,7 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../img/fondo.jpg");
+  background-image: url("../img/fondo.jpg");
   background-size: contain;
 }
 
@@ -293,7 +315,7 @@ main section div img {
 .section3 h3 a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: blue;
   font-size: 50px;
 }
 
@@ -301,7 +323,7 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../img/fondo.jpg");
+  background-image: url("../img/fondo.jpg");
   background-size: contain;
 }
 
@@ -323,7 +345,7 @@ main section div img {
 .section4 h3 a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: lightseagreen;
   font-size: 50px;
 }
 
@@ -331,7 +353,7 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../img/fondo.jpg");
+  background-image: url("../img/fondo.jpg");
   background-size: contain;
 }
 

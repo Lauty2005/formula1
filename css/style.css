@@ -5,12 +5,7 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
-}
-
-hr {
-  height: 0.5rem;
-  background-color: lightgrey;
-  border-color: lightgrey;
+  background: linear-gradient(to bottom right, rgb(151, 151, 151) , rgba(0, 0, 0, 0.863));
 }
 
 
@@ -46,8 +41,9 @@ main section div img {
 }
 
 .introduccion {
-  background-color: rgb(255, 249, 241);
-  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0.5rem;
 }
 
 /* Ferrari */
@@ -76,8 +72,6 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/fondo.jpg");
-  background-size: contain;
 }
 
 /*Pagina Ferrari*/
@@ -293,8 +287,6 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/fondo.jpg");
-  background-size: contain;
 }
 
 /* Red Bull */
@@ -323,8 +315,6 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/fondo.jpg");
-  background-size: contain;
 }
 
 /* Aston Martin */
@@ -353,8 +343,6 @@ main section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/fondo.jpg");
-  background-size: contain;
 }
 
 /* Tabla */

@@ -1,178 +1,127 @@
-/*# sourceMappingURL=style.css.map */
+/*Valores por default de la pagina*/
 * {
   margin: 0;
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
-  background: linear-gradient(to bottom right, rgb(151, 151, 151) , rgba(0, 0, 0, 0.863));
+  font-family: "Work Sans", sans-serif;
+  background: linear-gradient(to bottom right, #9c9c9c, #7a7a7a);
+}
+body h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3rem;
+  font-style: italic;
+}
+body h2 {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+body p {
+  margin: 0.5rem 1rem;
 }
 
-
-/* Header */
-
+/*Header*/
 header nav {
   background-color: rgba(0, 0, 0, 0.719);
   width: 100%;
   top: 0;
 }
-
 header nav ul {
   display: flex;
   margin: 0;
 }
-
 header nav ul li {
   margin: 15px;
   list-style-type: none;
 }
-
 header nav ul li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* Main */
-
-main section div img {
-  width: 15%;
-  height: 15%;
-}
-
+/*Index*/
 .introduccion {
   display: flex;
   flex-direction: column;
   margin: 1rem 0.5rem;
 }
 
-/* Ferrari */
+.pilotos-index {
+  width: 15%;
+  height: 15%;
+}
 
-.ferrari {
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section h3 #link-ferrari {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+  font-size: 50px;
+}
+.section h3 #link-mercedes {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+}
+.section h3 #link-redbull {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+  font-size: 50px;
+}
+.section h3 #link-astonmartin {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightseagreen;
+  font-size: 50px;
+}
+.section .tabla {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 25px 0px;
 }
-
-.ferrari img {
+.section .tabla img {
   border-radius: 10px;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
 }
-
-.section1 h3 a {
-  text-decoration: none;
-  font-weight: bold;
-  color: red;
-  font-size: 50px;
+.section .tabla table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid black;
+  width: 50%;
+  text-align: center;
+  color: black;
 }
 
-.section1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*Pagina Ferrari*/
-
-.ferrari-main {
-  background-color: rgba(0, 0, 0, 0.863);
+/*Paginas*/
+.paginas-main {
+  background-color: #393d42;
   color: lightgray;
 }
-
-/*SF23*/
-
-.ferrari-main section h2 {
+.paginas-main section h2 {
   text-align: center;
 }
-
-.ferrari-main section div #monoplaza {
-  width: 50%;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
-}
-
-.contenedor {
+.paginas-main section .contenedor {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-.izquierda {
+.paginas-main section .contenedor .izquierda {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-/*Equipo*/
-
-#piloto1 {
-  width: 35%;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
-  margin-left: 3rem;
-}
-
-.corredor-1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#piloto2 {
-  width: 35%;
-  border-radius: 1rem;
-  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
-  margin-left: 3rem;
-}
-
-.corredor-2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.contenedor-ferrari {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.informacion {
-  display: flex;
-}
-
-.informacion div {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 1rem;
-}
-
-.informacion div p {
-  margin: 0;
-}
-
-.estadisticas {
-  display: flex;
-}
-
-
-
-/*Pistas*/
-
-.bahrein {
-  width: 50%;
-  height: auto;
-}
-
-
-/*Tarjetas*/
-
-.wrap {
+.paginas-main section .contenedor .izquierda .wrap {
   width: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -183,29 +132,25 @@ main section div img {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
-.tarjeta-wrap {
+.paginas-main section .contenedor .izquierda .tarjeta-wrap {
   margin: 10px;
   -webkit-perspective: 800;
   perspective: 800;
 }
-
-.tarjeta {
+.paginas-main section .contenedor .izquierda .tarjeta {
   width: 12.5rem;
   height: 12.5rem;
   background: #797979;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transition: .7s ease;
-  transition: .7s ease;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
   -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
   box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
-
 }
-
-.adelante,
-.atras {
+.paginas-main section .contenedor .izquierda .adelante,
+.paginas-main section .contenedor .izquierda .atras {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -214,18 +159,15 @@ main section div img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-.adelante {
+.paginas-main section .contenedor .izquierda .adelante {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.atras {
+.paginas-main section .contenedor .izquierda .atras {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-
   padding: 15px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -243,132 +185,229 @@ main section div img {
   text-align: center;
   color: #fff;
   font-family: "open sans";
-  background: #ff0000;
+  background: #797979;
 }
-
-.tarjeta-wrap:hover .tarjeta {
+.paginas-main section .contenedor .izquierda .tarjeta-wrap:hover .tarjeta {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
-.card1 {
+.paginas-main section .contenedor .izquierda .card1 {
   background-image: url(http://1.1m.yt/J9Kw7kl.jpg);
   background-size: cover;
 }
-
-.card2 {
+.paginas-main section .contenedor .izquierda .card2 {
   background-image: url(http://1.1m.yt/dlxMf3R.jpg);
   background-size: cover;
 }
-
-/* Mercedes */
-
-.mercedes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 25px 0px;
+.paginas-main section .contenedor .izquierda p {
+  text-align: center;
 }
-
-.mercedes img {
-  border-radius: 10px;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
-}
-
-.section2 h3 a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  font-size: 50px;
-}
-
-.section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Red Bull */
-
-.redbull {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 25px 0px;
-}
-
-.redbull img {
-  border-radius: 10px;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
-}
-
-.section3 h3 a {
-  text-decoration: none;
-  font-weight: bold;
-  color: blue;
-  font-size: 50px;
-}
-
-.section3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Aston Martin */
-
-.astonmartin {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 25px 0px;
-}
-
-.astonmartin img {
-  border-radius: 10px;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
-}
-
-.section4 h3 a {
-  text-decoration: none;
-  font-weight: bold;
-  color: lightseagreen;
-  font-size: 50px;
-}
-
-.section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Tabla */
-
-table {
-  table-layout: fixed;
-  border-collapse: collapse;
-  border: 3px solid black;
+.paginas-main section .contenedor #monoplaza {
   width: 50%;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+}
+.paginas-main section .contenedor .derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paginas-main section .contenedor .derecha .wrap {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.paginas-main section .contenedor .derecha .tarjeta-wrap {
+  margin: 10px;
+  -webkit-perspective: 800;
+  perspective: 800;
+}
+.paginas-main section .contenedor .derecha .tarjeta {
+  width: 12.5rem;
+  height: 12.5rem;
+  background: #797979;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+.paginas-main section .contenedor .derecha .adelante,
+.paginas-main section .contenedor .derecha .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.paginas-main section .contenedor .derecha .adelante {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginas-main section .contenedor .derecha .atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  color: black;
+  color: #fff;
+  font-family: "open sans";
+  background: #797979;
+}
+.paginas-main section .contenedor .derecha .tarjeta-wrap:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.paginas-main section .contenedor .derecha .card1 {
+  background-image: url(http://1.1m.yt/J9Kw7kl.jpg);
+  background-size: cover;
+}
+.paginas-main section .contenedor .derecha .card2 {
+  background-image: url(http://1.1m.yt/dlxMf3R.jpg);
+  background-size: cover;
+}
+.paginas-main section .contenedor .derecha p {
+  text-align: center;
+}
+.paginas-main section .corredor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.paginas-main section .corredor #imagen-piloto {
+  width: 35%;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+  margin-left: 3rem;
+}
+.paginas-main section .corredor .contenedor-pilotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paginas-main section .corredor .contenedor-pilotos .informacion {
+  display: flex;
+}
+.paginas-main section .corredor .contenedor-pilotos .informacion div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem;
+}
+.paginas-main section .corredor .contenedor-pilotos .informacion div p {
+  margin: 0;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas {
+  display: flex;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .wrap {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .tarjeta-wrap {
+  margin: 10px;
+  -webkit-perspective: 800;
+  perspective: 800;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .tarjeta {
+  width: 12.5rem;
+  height: 12.5rem;
+  background: #797979;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .adelante,
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .adelante {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
+  background: #797979;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .tarjeta-wrap:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .card1 {
+  background-image: url(http://1.1m.yt/J9Kw7kl.jpg);
+  background-size: cover;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas .card2 {
+  background-image: url(http://1.1m.yt/dlxMf3R.jpg);
+  background-size: cover;
+}
+.paginas-main section .corredor .contenedor-pilotos .estadisticas p {
+  text-align: center;
 }
 
-/* Titulos */
-
-h1 {
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 40px;
-}
-
-/* Footer */
-
+/*Footer*/
 footer {
   background-image: url("../img/footer.jpg");
   background-size: cover;
@@ -377,26 +416,22 @@ footer {
   align-items: center;
   padding: 25px 0px;
 }
-
 footer img {
   width: 320px;
   height: 140px;
 }
-
 footer div h4 {
   text-decoration: none;
   font-weight: bold;
   color: black;
   font-size: 25px;
 }
-
-.contacto {
+footer div .contacto {
   display: flex;
   flex-direction: column;
   max-width: 25%;
 }
-
-.contacto label input {
+footer div label input {
   background-color: transparent;
   width: 400px;
   height: 40px;
@@ -408,8 +443,7 @@ footer div h4 {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-
-.contacto label textarea {
+footer div label textarea {
   background-color: transparent;
   width: 400px;
   height: 40px;
@@ -422,17 +456,14 @@ footer div h4 {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-
-.contacto label {
+footer div label {
   color: rgb(190, 190, 190);
   text-decoration: underline;
 }
-
-::placeholder {
+footer div ::placeholder {
   color: rgb(190, 190, 190);
 }
-
-.contacto input {
+footer div input {
   height: 40px;
   padding-left: 5px;
   padding-right: 5px;
@@ -446,8 +477,9 @@ footer div h4 {
   cursor: pointer;
   color: rgb(190, 190, 190);
 }
-
 footer div p {
   color: white;
   padding-top: 350px;
 }
+
+/*# sourceMappingURL=style.css.map */

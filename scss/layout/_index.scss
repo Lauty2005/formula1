@@ -1,68 +1,141 @@
-.introduccion {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0.5rem;
-}
-
-.pilotos-index {
-    width: 15%;
-    height: 15%;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h3 {
-        #link-ferrari {
-            text-decoration: none;
-            font-weight: bold;
-            color: red;
-            font-size: 50px;
+@media screen and (min-width: 1024px) {
+    .introduccion {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    
+    .pilotos-index {
+        width: 15%;
+        height: 15%;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h3 {
+            #link-ferrari {
+                text-decoration: none;
+                font-weight: bold;
+                color: red;
+                font-size: 50px;
+            }
+    
+            #link-mercedes {
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                font-size: 50px;
+            }
+    
+            #link-redbull {
+                text-decoration: none;
+                font-weight: bold;
+                color: blue;
+                font-size: 50px;
+            }
+    
+            #link-astonmartin {
+                text-decoration: none;
+                font-weight: bold;
+                color: lightseagreen;
+                font-size: 50px;
+            }
         }
-
-        #link-mercedes {
-            text-decoration: none;
-            font-weight: bold;
-            color: black;
-            font-size: 50px;
-        }
-
-        #link-redbull {
-            text-decoration: none;
-            font-weight: bold;
-            color: blue;
-            font-size: 50px;
-        }
-
-        #link-astonmartin {
-            text-decoration: none;
-            font-weight: bold;
-            color: lightseagreen;
-            font-size: 50px;
+    
+        .tabla {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 25px 0px;
+    
+            img {
+                border-radius: 10px;
+                box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
+            }
+    
+            table {
+                table-layout: fixed;
+                border-collapse: collapse;
+                border: 3px solid black;
+                width: 50%;
+                text-align: center;
+                color: black;
+            }
         }
     }
+}
 
-    .tabla {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .introduccion {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    
+    .pilotos-index {
+        width: 20%;
+        height: 20%;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        padding: 25px 0px;
-
-        img {
-            border-radius: 10px;
-            box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.719);
+    
+        h3 {
+            #link-ferrari {
+                text-decoration: none;
+                font-weight: bold;
+                color: red;
+                font-size: 2.5rem;
+            }
+    
+            #link-mercedes {
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                font-size: 2.5rem;
+            }
+    
+            #link-redbull {
+                text-decoration: none;
+                font-weight: bold;
+                color: blue;
+                font-size: 2.5rem;
+            }
+    
+            #link-astonmartin {
+                text-decoration: none;
+                font-weight: bold;
+                color: lightseagreen;
+                font-size: 2.5rem;
+            }
         }
-
-        table {
-            table-layout: fixed;
-            border-collapse: collapse;
-            border: 3px solid black;
-            width: 50%;
-            text-align: center;
-            color: black;
+    
+        .tabla {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 2rem 0;
+    
+            img {
+                border-radius: 1rem;
+                box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.719);
+            }
+    
+            table {
+                table-layout: fixed;
+                border-collapse: collapse;
+                border: 0.2rem solid black;
+                width: 50%;
+                text-align: center;
+                color: black;
+            }
         }
     }
 }

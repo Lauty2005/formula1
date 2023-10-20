@@ -1,76 +1,162 @@
-.paginas-main {
-    background-color: #393d42;
-    color: lightgray;
-
-    section {
-        h2 {
-            text-align: center;
+@media screen and (min-width: 1024px) {
+    .paginas-main {
+        background-color: #393d42;
+        color: lightgray;
+    
+        section {
+            h2 {
+                text-align: center;
+            }
+    
+            .contenedor {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+                .izquierda {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @import "./cards";
+                }
+    
+                #monoplaza {
+                    width: 50%;
+                    border-radius: 1rem;
+                    box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+                }
+    
+                .derecha {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @import "./cards";
+                }
+            }
         }
-
-        .contenedor {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            .izquierda {
+    
+        section {
+            .corredor {
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                @import "./cards";
-            }
-
-            #monoplaza {
-                width: 50%;
-                border-radius: 1rem;
-                box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
-            }
-
-            .derecha {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                @import "./cards";
+                justify-content: space-around;
+    
+                #imagen-piloto {
+                    width: 35%;
+                    border-radius: 1rem;
+                    box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+                    margin-left: 3rem;
+                }
+    
+                .contenedor-pilotos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    .informacion {
+                        display: flex;
+    
+                        div {
+                            width: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-right: 1rem;
+    
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+    
+                    .estadisticas {
+                        display: flex;
+                        @import "./cards";
+                    }
+                }
             }
         }
     }
+}
 
-    section {
-        .corredor {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            #imagen-piloto {
-                width: 35%;
-                border-radius: 1rem;
-                box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
-                margin-left: 3rem;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .paginas-main {
+        background-color: #393d42;
+        color: lightgray;
+    
+        section {
+            h2 {
+                text-align: center;
             }
-
-            .contenedor-pilotos {
+    
+            .contenedor {
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-
-                .informacion {
+    
+                .izquierda {
                     display: flex;
-
-                    div {
-                        width: auto;
+                    flex-direction: column;
+                    align-items: center;
+                    @import "./cards";
+                }
+    
+                #monoplaza {
+                    width: 45%;
+                    border-radius: 1rem;
+                    box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+                }
+    
+                .derecha {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @import "./cards";
+                }
+            }
+        }
+    
+        section {
+            .corredor {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+    
+                #imagen-piloto {
+                    width: 30%;
+                    border-radius: 1rem;
+                    box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+    
+                .contenedor-pilotos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    .informacion {
                         display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        padding-right: 1rem;
-
-                        p {
-                            margin: 0;
+    
+                        div {
+                            width: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-right: 1rem;
+    
+                            p {
+                                margin: 0;
+                                font-size: 1rem;
+                            }
                         }
                     }
-                }
-
-                .estadisticas {
-                    display: flex;
-                    @import "./cards";
+    
+                    .estadisticas {
+                        display: flex;
+                        @import "./cards";
+                    }
                 }
             }
         }

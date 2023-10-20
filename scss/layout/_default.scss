@@ -2,23 +2,51 @@
     margin: 0;
 }
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    background: linear-gradient(to bottom right, #9c9c9c, #7a7a7a);
-    h1{
-        text-align: center;
-        text-decoration: underline;
-        font-size: 3rem;
-        font-style: italic;
+@media screen and (min-width: 1024px) {
+    body {
+        font-family: 'Work Sans', sans-serif;
+        background: linear-gradient(to bottom right, #9c9c9c, #7a7a7a);
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 3rem;
+            font-style: italic;
+        }
+        
+        h2{
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+        
+        p{
+            margin: 0.5rem 1rem;
+        }
     }
-    
-    h2{
-        text-decoration: underline;
-        font-size: 1.5rem;
-        margin-left: 1rem;
-    }
-    
-    p{
-        margin: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-family: 'Work Sans', sans-serif;
+        background: linear-gradient(to bottom right, #9c9c9c, #7a7a7a);
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+        
+        h2{
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 1rem;
+            margin-left: 1rem;
+        }
+        
+        p{
+            font-size: 0.7rem;
+            margin: 0.5rem 1rem;
+        }
     }
 }

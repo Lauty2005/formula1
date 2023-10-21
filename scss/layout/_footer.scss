@@ -215,6 +215,8 @@
             label {
                 color: rgb(190, 190, 190);
                 text-decoration: underline;
+                display: flex;
+                flex-direction: column;
             }
             ::placeholder {
                 color: rgb(190, 190, 190);

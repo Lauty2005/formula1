@@ -2994,6 +2994,8 @@
   footer div label {
     color: rgb(190, 190, 190);
     text-decoration: underline;
+    display: flex;
+    flex-direction: column;
   }
   footer div ::placeholder {
     color: rgb(190, 190, 190);

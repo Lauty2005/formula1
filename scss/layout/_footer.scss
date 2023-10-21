@@ -159,3 +159,85 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    footer {
+        background-image: url("../img/footer.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1.5rem 0px;
+    
+        img {
+            width: 15rem;
+            height: 7.5rem;
+            padding-right: 2.5rem;
+        }
+    
+        div {
+            h4 {
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+                font-size: 1.5rem;
+            }
+            .contacto {
+                display: flex;
+                flex-direction: column;
+                max-width: 25%;
+            }
+            label input {
+                background-color: transparent;
+                width: 20rem;
+                height: 2rem;
+                border-radius: 3px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: grey;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+            label textarea {
+                background-color: transparent;
+                width: 20rem;
+                height: 2rem;
+                border-radius: 3px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: grey;
+                cursor: pointer;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+            label {
+                color: rgb(190, 190, 190);
+                text-decoration: underline;
+            }
+            ::placeholder {
+                color: rgb(190, 190, 190);
+            }
+            input {
+                height: 40px;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                background-color: transparent;
+                border-color: grey;
+                border-style: solid;
+                border-radius: 3px;
+                width: 100px;
+                cursor: pointer;
+                color: rgb(190, 190, 190);
+            }
+        }
+        div p {
+            color: white;
+            padding-top: 20rem;
+            margin: 0 -10rem;
+        }
+    }
+}

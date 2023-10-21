@@ -162,3 +162,87 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .paginas-main {
+        background-color: #393d42;
+        color: lightgray;
+    
+        section {
+            h2 {
+                text-align: center;
+            }
+    
+            .contenedor {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .izquierda {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @import "./cards";
+                }
+    
+                #monoplaza {
+                    width: 45%;
+                    border-radius: 1rem;
+                    box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+                }
+    
+                .derecha {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @import "./cards";
+                }
+            }
+        }
+    
+        section {
+            .corredor {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+    
+                #imagen-piloto {
+                    width: 30%;
+                    border-radius: 1rem;
+                    box-shadow: 0.5rem 0.5rem rgb(53, 52, 52);
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+    
+                .contenedor-pilotos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    .informacion {
+                        display: flex;
+    
+                        div {
+                            width: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-right: 1rem;
+    
+                            p {
+                                margin: 0;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+    
+                    .estadisticas {
+                        display: flex;
+                        @import "./cards";
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2951,15 +2951,16 @@
     padding: 1.5rem 0px;
   }
   footer img {
-    width: 15rem;
-    height: 7.5rem;
-    padding-right: 2.5rem;
+    width: 7.5rem;
+    height: 3.75rem;
+    padding-right: 1rem;
   }
   footer div h4 {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 1.5rem;
+    width: fit-content;
   }
   footer div .contacto {
     display: flex;
@@ -2968,7 +2969,7 @@
   }
   footer div label input {
     background-color: transparent;
-    width: 20rem;
+    width: 10rem;
     height: 2rem;
     border-radius: 3px;
     border-style: solid;
@@ -2980,7 +2981,7 @@
   }
   footer div label textarea {
     background-color: transparent;
-    width: 20rem;
+    width: 10rem;
     height: 2rem;
     border-radius: 3px;
     border-style: solid;

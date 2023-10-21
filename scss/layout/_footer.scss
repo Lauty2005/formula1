@@ -186,7 +186,6 @@
             .contacto {
                 display: flex;
                 flex-direction: column;
-                max-width: 25%;
             }
             label input {
                 background-color: transparent;
@@ -203,7 +202,7 @@
             label textarea {
                 background-color: transparent;
                 width: 10rem;
-                height: 2rem;
+                height: 3rem;
                 border-radius: 3px;
                 border-style: solid;
                 border-width: 2px;
@@ -237,8 +236,6 @@
         }
         div p {
             color: white;
-            padding-top: 20rem;
-            margin: 0 -10rem;
         }
     }
 }
